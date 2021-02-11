@@ -1,1 +1,71 @@
-<p>barra-nav works!</p>
+<mat-toolbar>
+  <nav class="navbar Fixed top navbar-expand-lg navbar-light bg-light">
+    <div class="col justify-content-start
+                col-xs-2 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo_NavBar.png" width="100%" height="100%" alt="" >
+      </a>
+    </div>
+
+    <div class="col justify-content-center
+                col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+
+    <div class="col justify-content-end
+                col-xs-2 col-sm-2 col-md-1 col-lg-7 col-xl-7">
+      <button class="navbar-toggler " type="button" data-target="#navbar_botones"
+              aria-controls="navbar_botones" aria-expanded="false" aria-label="Toggle navigation"
+              style="border: none; background: none">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbar_botones">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item mx-xs-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 px-1 ">
+            <a class="nav-link" href="index.html">Inicio
+              <span class="sr-only"></span>
+            </a>
+          </li>
+          <li class="nav-item mx-xs-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 px-1 my-1 py-1">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Servicios
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                <a class="dropdown-item" href="#">Nutrición</a>
+                <a class="dropdown-item" href="#">Fisipterapía</a>
+                <a class="dropdown-item" href="#">Aeróbicos</a>
+                <a class="dropdown-item" href="#">Cardio</a>
+                <a class="dropdown-item" href="#">Potencia</a>
+                <a class="dropdown-item" href="#">CrossFit</a>
+                <a class="dropdown-item" href="#">Defensa Personal</a>
+                <a class="dropdown-item" href="#">Entrena Casa</a>
+                <a class="dropdown-item" href="#">Tienda</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item mx-xs-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 px-1 my-1 py-1">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Membresia
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Contacto</a>
+                <a class="dropdown-item" href="#">Memsual</a>
+                <a class="dropdown-item" href="#">Anual</a>
+                <a class="dropdown-item" href="#">Entrena en casa</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item mx-xs-0 mx-sm-0 mx-md-0 mx-lg-0 mx-xl-0 px-1 my-1 py-1">
+            <img src="assets/img/usuario.png" width="80px" height="23px" alt="">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </nav>
+</mat-toolbar>
+

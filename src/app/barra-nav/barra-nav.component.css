@@ -1,0 +1,28 @@
+.nav-item{
+  color: #24292e;
+  font-family: 'Corbel Light';
+  font-weight: 610 ;
+  font-size: 15px;
+}
+.nav-link{
+  color: #24292e;
+  font-family: 'Corbel Light';
+  font-weight: 610 ;
+  font-size: 15px;
+}
+
+.dropdown-item{
+  color: #e93835;
+  font-family: "Corbel Light";
+  font-weight: 610 ;
+  font-size: 15px;
+}
+
+.btn{
+  color: #24292e;
+  font-family: "Corbel Light";
+  font-weight: 600 ;
+  font-size: 15px;
+  background: none;
+  border: #e6ebf1
+}
