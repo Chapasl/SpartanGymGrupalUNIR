@@ -8,3 +8,11 @@
 .card{
   border: white;
 }
+#anima{
+  cursor: pointer;
+  transition: all ease-out 0.2s;
+}
+
+.anima:hover{
+  transform: scale(1.05);
+}

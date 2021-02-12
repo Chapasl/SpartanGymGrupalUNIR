@@ -7,7 +7,7 @@ import { BarraNavComponent } from './barra-nav/barra-nav.component';
 import { C2Component } from './c2/c2.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalSerComponent } from './gal-ser/gal-ser.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -17,11 +17,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FooterComponent,
     GalSerComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
