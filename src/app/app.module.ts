@@ -8,6 +8,7 @@ import { C2Component } from './c2/c2.component';
 import { FooterComponent } from './footer/footer.component';
 import { GalSerComponent } from './gal-ser/gal-ser.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { PromocionesComponent } from './promociones/promociones.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     BarraNavComponent,
     C2Component,
     FooterComponent,
-    GalSerComponent
+    GalSerComponent,
+    PromocionesComponent
   ],
     imports: [
         BrowserModule,
