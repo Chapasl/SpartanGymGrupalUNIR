@@ -1,1 +1,56 @@
-<p>promociones works!</p>
+<div class="container">
+  <div class="row justify-content-center py-5">
+    <button type="button" class="btn btn-success py-2 " (click)="MostrarOferta($event)" >Ver ofertas</button>
+  </div>
+</div>
+
+<div class="container" [hidden]="moferta">
+    <ul [ngSwitch]="ofnumero" class="text-danger">
+      <li *ngSwitchCase="0"><H1>No ha seleccionada ninguna oferta </H1></li>
+      <li *ngSwitchCase="1"><H1>Genial.!! Escogiste modo Spartano</H1></li>
+      <li *ngSwitchCase="2"><H1>Genial.!! Escogiste modo Soldado</H1></li>
+      <li *ngSwitchCase="3"><H1>Seguro modo esclavo</H1></li>
+      <li *ngSwitchDefault>Opción no valida</li>
+    </ul>
+
+    <div class="row">
+
+      <div class="col">
+        <div class="card justify-content-center text-center" style="width: 18rem;">
+          <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Oferta Espartana</h5>
+            <p class="card-text">$500</p>
+            <a  class="btn btn-primary" type="button" (click)="compraof1($event)">Comprar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col">
+          <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oferta Soldado</h5>
+              <p class="card-text">$200</p>
+              <a  class="btn btn-primary" type="button" (click)="compraof2($event)">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col">
+          <div class="card justify-content-center text-center" style="width: 18rem;">
+            <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oferta esclavo</h5>
+              <p class="card-text">$50</p>
+              <a  class="btn btn-primary" type="button" (click)="compraof3($event)">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
