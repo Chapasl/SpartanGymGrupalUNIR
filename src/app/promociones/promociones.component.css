@@ -1,0 +1,40 @@
+.h1{
+  color: #24292e;
+  font-family: 'Corbel Light';
+  font-weight: 610 ;
+  font-size: 15px;
+}
+
+.card-title{
+  color: #24292e;
+  font-family: 'Corbel Light';
+  font-weight: 610 ;
+  font-size: 15px;
+}
+
+.card-text{
+  color: #24292e;
+  font-family: 'Corbel Light';
+  font-weight: 610 ;
+  font-size: 15px;
+}
+
+.btn{
+  color: white;
+  font-family: "Corbel Light";
+  font-weight: 600 ;
+  font-size: 15px;
+  background: black;
+  border: #e6ebf1;
+}
+
+.card{
+  border: none;
+}
+
+.text-danger{
+  color: #e93835;
+  font-family: "Corbel Light";
+  font-weight: 600 ;
+  font-size: 15px;
+}

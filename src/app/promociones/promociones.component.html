@@ -1,56 +1,74 @@
 <div class="container">
   <div class="row justify-content-center py-5">
-    <button type="button" class="btn btn-success py-2 " (click)="MostrarOferta($event)" >Ver ofertas</button>
+    <button type="button" class="btn btn-light py-2 " (click)="MostrarOferta($event)">Ver ofertas</button>
   </div>
 </div>
 
-<div class="container" [hidden]="moferta">
-    <ul [ngSwitch]="ofnumero" class="text-danger">
-      <li *ngSwitchCase="0"><H1>No ha seleccionada ninguna oferta </H1></li>
-      <li *ngSwitchCase="1"><H1>Genial.!! Escogiste modo Spartano</H1></li>
-      <li *ngSwitchCase="2"><H1>Genial.!! Escogiste modo Soldado</H1></li>
-      <li *ngSwitchCase="3"><H1>Seguro modo esclavo</H1></li>
-      <li *ngSwitchDefault>Opción no valida</li>
-    </ul>
+<div class="container " [hidden]="moferta">
+  <div class="row">
 
-    <div class="row">
-
-      <div class="col">
-        <div class="card justify-content-center text-center" style="width: 18rem;">
-          <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Oferta Espartana</h5>
-            <p class="card-text">$500</p>
-            <a  class="btn btn-primary" type="button" (click)="compraof1($event)">Comprar</a>
-          </div>
+    <div class="col align-content-center
+         col-xs-12 align-content-sm-center col-sm-12 col-md-6 col-lg-4 col-xl-4
+         mx-xs-5 mx-sm-5 mx-md-0 mx-lg-0 mx-xl-0
+         my-xs-2 my-sm-2 my-md-0 my-lg-0 my-xl-0
+         px-xs-5 px-sm-5 px-md-0 px-lg-3 px-xl-4
+         py-xs-2 py-sm-2 py-md-0 py-lg-0 py-xl-0">
+      <div class="card text-center" style="width: 18rem;">
+        <img src="assets/img/promo2.png" class="card-img-top container-fluid" width="80%" height="80%" alt="...">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Oferta Espartana</h5>
+          <p class="card-text">$100</p>
+          <a class="btn btn-primary" type="button" (click)="compraof1($event)">Comprar</a>
         </div>
       </div>
-
-      <div class="col">
-        <div class="col">
-          <div class="card justify-content-center text-center" style="width: 18rem;">
-            <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Oferta Soldado</h5>
-              <p class="card-text">$200</p>
-              <a  class="btn btn-primary" type="button" (click)="compraof2($event)">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="col">
-          <div class="card justify-content-center text-center" style="width: 18rem;">
-            <img src="assets/img/05_potencia.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Oferta esclavo</h5>
-              <p class="card-text">$50</p>
-              <a  class="btn btn-primary" type="button" (click)="compraof3($event)">Comprar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <div class="col justify-content-center
+         col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4
+         mx-xs-5 mx-sm-5 mx-md-0 mx-lg-0 mx-xl-0
+         my-xs-2 my-sm-2 my-md-0 my-lg-0 my-xl-0
+         px-xs-5 px-sm-5 px-md-0 px-lg-3 px-xl-4
+         py-xs-2 py-sm-2 py-md-0 py-lg-0 py-xl-0">
+      <div class="card justify-content-center text-center" style="width: 18rem;">
+        <img src="assets/img/promo1.png" class="card-img-top container-fluid" width="80%" height="80%" alt="...">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Oferta Soldado</h5>
+          <p class="card-text">$20</p>
+          <a class="btn btn-primary" type="button" (click)="compraof2($event)">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col justify-content-center
+         col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4
+         mx-xs-5 mx-sm-5 mx-md-0 mx-lg-0 mx-xl-0
+         my-xs-2 my-sm-2 my-md-0 my-lg-0 my-xl-0
+         px-xs-5 px-sm-5 px-md-0 px-lg-3 px-xl-4
+         py-xs-2 py-sm-2 py-md-0 py-lg-0 py-xl-0">
+      <div class="card justify-content-center text-center" style="width: 18rem;">
+        <img src="assets/img/promo3.png" class="card-img-top container-fluid" width="80%" height="80%" alt="...">
+        <div class="card-body justify-content-center">
+          <h5 class="card-title">Oferta esclavo</h5>
+          <p class="card-text">$25</p>
+          <a class="btn btn-primary" type="button" (click)="compraof3($event)">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="justify-content-center
+              col-sm-12 col-md-12 col-lg-12 col-xl-12
+       mx-xs-5 mx-sm-5 mx-md-0 mx-lg-0 mx-xl-0
+       my-xs-2 my-sm-2 my-md-0 my-lg-0 my-xl-0
+       px-xs-5 px-sm-5 px-md-0 px-lg-3 px-xl-4
+       py-xs-2 py-sm-2 py-md-0 py-lg-0 py-xl-0">
+    <ul [ngSwitch]="ofnumero" class="text-danger justify-content-center">
+      <a *ngSwitchCase="0"><H1 class="justify-content-center">No ha seleccionada ninguna oferta </H1></a>
+      <a *ngSwitchCase="1"><H1>Genial!!! Escogiste modo Spartano</H1></a>
+      <a *ngSwitchCase="2"><H1>No esta mal.. Escogiste modo Soldado</H1></a>
+      <a *ngSwitchCase="3"><H1>Seguro? modo esclavo...</H1></a>
+      <a *ngSwitchDefault>Opción no valida</a>
+    </ul>
+  </div>
+
 </div>
